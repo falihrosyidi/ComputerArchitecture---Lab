@@ -1,0 +1,476 @@
+Simulator report for data_mem_rv32i
+Fri Nov 07 20:50:30 2025
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 253 nodes    ;
+; Simulation Coverage         ;      82.38 % ;
+; Total Number of Transitions ; 8946         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C5F256C6  ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                              ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+; Option                                                                                     ; Setting            ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+; Simulation mode                                                                            ; Timing             ; Timing        ;
+; Start time                                                                                 ; 0 ns               ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF               ;               ;
+; Vector input source                                                                        ; data_mem_rv32i.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                 ; On            ;
+; Check outputs                                                                              ; Off                ; Off           ;
+; Report simulation coverage                                                                 ; On                 ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                 ; On            ;
+; Display missing 1-value coverage report                                                    ; On                 ; On            ;
+; Display missing 0-value coverage report                                                    ; On                 ; On            ;
+; Detect setup and hold time violations                                                      ; Off                ; Off           ;
+; Detect glitches                                                                            ; Off                ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                ; Off           ;
+; Generate Signal Activity File                                                              ; Off                ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                 ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE         ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto               ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport          ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport          ; Transport     ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++-------------------------------------------------------------------------+
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ALTSYNCRAM ;
++-------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      82.38 % ;
+; Total nodes checked                                 ; 253          ;
+; Total output ports checked                          ; 261          ;
+; Total output ports with complete 1/0-value coverage ; 215          ;
+; Total output ports with no 1/0-value coverage       ; 44           ;
+; Total output ports with no 1-value coverage         ; 44           ;
+; Total output ports with no 0-value coverage         ; 46           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                          ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; Node Name                                                                  ; Output Port Name                                                     ; Output Port Type ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[0]  ; portadataout0    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[1]  ; portadataout1    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[2]  ; portadataout2    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[3]  ; portadataout3    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[4]  ; portadataout4    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[5]  ; portadataout5    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[6]  ; portadataout6    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[7]  ; portadataout7    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[8]  ; portadataout9    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[9]  ; portadataout10   ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[10] ; portadataout11   ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[11] ; portadataout12   ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[12] ; portadataout13   ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[13] ; portadataout14   ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[14] ; portadataout15   ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a0  ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[15] ; portadataout16   ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[16] ; portadataout0    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[17] ; portadataout1    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[18] ; portadataout2    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[19] ; portadataout3    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[20] ; portadataout4    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[21] ; portadataout5    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[22] ; portadataout6    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[23] ; portadataout7    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[24] ; portadataout9    ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[25] ; portadataout10   ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[26] ; portadataout11   ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[27] ; portadataout12   ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[28] ; portadataout13   ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[29] ; portadataout14   ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[30] ; portadataout15   ;
+; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|ram_block1a16 ; |data_mem_rv32i|altsyncram:ram|altsyncram_ftv:auto_generated|q_a[31] ; portadataout16   ;
+; |data_mem_rv32i|Mux35~0                                                    ; |data_mem_rv32i|Mux35~0                                              ; combout          ;
+; |data_mem_rv32i|Mux34~1                                                    ; |data_mem_rv32i|Mux34~1                                              ; combout          ;
+; |data_mem_rv32i|Mux33~0                                                    ; |data_mem_rv32i|Mux33~0                                              ; combout          ;
+; |data_mem_rv32i|Mux32~0                                                    ; |data_mem_rv32i|Mux32~0                                              ; combout          ;
+; |data_mem_rv32i|Mux31~0                                                    ; |data_mem_rv32i|Mux31~0                                              ; combout          ;
+; |data_mem_rv32i|Mux30~0                                                    ; |data_mem_rv32i|Mux30~0                                              ; combout          ;
+; |data_mem_rv32i|Mux29~0                                                    ; |data_mem_rv32i|Mux29~0                                              ; combout          ;
+; |data_mem_rv32i|Mux28~0                                                    ; |data_mem_rv32i|Mux28~0                                              ; combout          ;
+; |data_mem_rv32i|Mux27~0                                                    ; |data_mem_rv32i|Mux27~0                                              ; combout          ;
+; |data_mem_rv32i|Mux26~0                                                    ; |data_mem_rv32i|Mux26~0                                              ; combout          ;
+; |data_mem_rv32i|Mux25~0                                                    ; |data_mem_rv32i|Mux25~0                                              ; combout          ;
+; |data_mem_rv32i|Mux24~0                                                    ; |data_mem_rv32i|Mux24~0                                              ; combout          ;
+; |data_mem_rv32i|Mux23~0                                                    ; |data_mem_rv32i|Mux23~0                                              ; combout          ;
+; |data_mem_rv32i|Mux22~0                                                    ; |data_mem_rv32i|Mux22~0                                              ; combout          ;
+; |data_mem_rv32i|Mux21~0                                                    ; |data_mem_rv32i|Mux21~0                                              ; combout          ;
+; |data_mem_rv32i|Mux20~1                                                    ; |data_mem_rv32i|Mux20~1                                              ; combout          ;
+; |data_mem_rv32i|Mux19~1                                                    ; |data_mem_rv32i|Mux19~1                                              ; combout          ;
+; |data_mem_rv32i|Mux18~0                                                    ; |data_mem_rv32i|Mux18~0                                              ; combout          ;
+; |data_mem_rv32i|Mux17~0                                                    ; |data_mem_rv32i|Mux17~0                                              ; combout          ;
+; |data_mem_rv32i|Mux16~0                                                    ; |data_mem_rv32i|Mux16~0                                              ; combout          ;
+; |data_mem_rv32i|Mux15~0                                                    ; |data_mem_rv32i|Mux15~0                                              ; combout          ;
+; |data_mem_rv32i|Mux14~0                                                    ; |data_mem_rv32i|Mux14~0                                              ; combout          ;
+; |data_mem_rv32i|Mux13~1                                                    ; |data_mem_rv32i|Mux13~1                                              ; combout          ;
+; |data_mem_rv32i|Mux12~0                                                    ; |data_mem_rv32i|Mux12~0                                              ; combout          ;
+; |data_mem_rv32i|Mux11~1                                                    ; |data_mem_rv32i|Mux11~1                                              ; combout          ;
+; |data_mem_rv32i|Mux11~3                                                    ; |data_mem_rv32i|Mux11~3                                              ; combout          ;
+; |data_mem_rv32i|Mux10~0                                                    ; |data_mem_rv32i|Mux10~0                                              ; combout          ;
+; |data_mem_rv32i|Mux10~1                                                    ; |data_mem_rv32i|Mux10~1                                              ; combout          ;
+; |data_mem_rv32i|Mux9~0                                                     ; |data_mem_rv32i|Mux9~0                                               ; combout          ;
+; |data_mem_rv32i|Mux9~1                                                     ; |data_mem_rv32i|Mux9~1                                               ; combout          ;
+; |data_mem_rv32i|Mux8~0                                                     ; |data_mem_rv32i|Mux8~0                                               ; combout          ;
+; |data_mem_rv32i|Mux8~1                                                     ; |data_mem_rv32i|Mux8~1                                               ; combout          ;
+; |data_mem_rv32i|Mux7~0                                                     ; |data_mem_rv32i|Mux7~0                                               ; combout          ;
+; |data_mem_rv32i|Mux7~1                                                     ; |data_mem_rv32i|Mux7~1                                               ; combout          ;
+; |data_mem_rv32i|Mux6~0                                                     ; |data_mem_rv32i|Mux6~0                                               ; combout          ;
+; |data_mem_rv32i|Mux6~1                                                     ; |data_mem_rv32i|Mux6~1                                               ; combout          ;
+; |data_mem_rv32i|Mux5~0                                                     ; |data_mem_rv32i|Mux5~0                                               ; combout          ;
+; |data_mem_rv32i|Mux5~1                                                     ; |data_mem_rv32i|Mux5~1                                               ; combout          ;
+; |data_mem_rv32i|Mux4~1                                                     ; |data_mem_rv32i|Mux4~1                                               ; combout          ;
+; |data_mem_rv32i|Mux4~2                                                     ; |data_mem_rv32i|Mux4~2                                               ; combout          ;
+; |data_mem_rv32i|dmem_out[0]~output                                         ; |data_mem_rv32i|dmem_out[0]~output                                   ; o                ;
+; |data_mem_rv32i|dmem_out[0]                                                ; |data_mem_rv32i|dmem_out[0]                                          ; padout           ;
+; |data_mem_rv32i|dmem_out[1]~output                                         ; |data_mem_rv32i|dmem_out[1]~output                                   ; o                ;
+; |data_mem_rv32i|dmem_out[1]                                                ; |data_mem_rv32i|dmem_out[1]                                          ; padout           ;
+; |data_mem_rv32i|dmem_out[2]~output                                         ; |data_mem_rv32i|dmem_out[2]~output                                   ; o                ;
+; |data_mem_rv32i|dmem_out[2]                                                ; |data_mem_rv32i|dmem_out[2]                                          ; padout           ;
+; |data_mem_rv32i|dmem_out[3]~output                                         ; |data_mem_rv32i|dmem_out[3]~output                                   ; o                ;
+; |data_mem_rv32i|dmem_out[3]                                                ; |data_mem_rv32i|dmem_out[3]                                          ; padout           ;
+; |data_mem_rv32i|dmem_out[4]~output                                         ; |data_mem_rv32i|dmem_out[4]~output                                   ; o                ;
+; |data_mem_rv32i|dmem_out[4]                                                ; |data_mem_rv32i|dmem_out[4]                                          ; padout           ;
+; |data_mem_rv32i|dmem_out[5]~output                                         ; |data_mem_rv32i|dmem_out[5]~output                                   ; o                ;
+; |data_mem_rv32i|dmem_out[5]                                                ; |data_mem_rv32i|dmem_out[5]                                          ; padout           ;
+; |data_mem_rv32i|dmem_out[6]~output                                         ; |data_mem_rv32i|dmem_out[6]~output                                   ; o                ;
+; |data_mem_rv32i|dmem_out[6]                                                ; |data_mem_rv32i|dmem_out[6]                                          ; padout           ;
+; |data_mem_rv32i|dmem_out[7]~output                                         ; |data_mem_rv32i|dmem_out[7]~output                                   ; o                ;
+; |data_mem_rv32i|dmem_out[7]                                                ; |data_mem_rv32i|dmem_out[7]                                          ; padout           ;
+; |data_mem_rv32i|dmem_out[8]~output                                         ; |data_mem_rv32i|dmem_out[8]~output                                   ; o                ;
+; |data_mem_rv32i|dmem_out[8]                                                ; |data_mem_rv32i|dmem_out[8]                                          ; padout           ;
+; |data_mem_rv32i|dmem_out[9]~output                                         ; |data_mem_rv32i|dmem_out[9]~output                                   ; o                ;
+; |data_mem_rv32i|dmem_out[9]                                                ; |data_mem_rv32i|dmem_out[9]                                          ; padout           ;
+; |data_mem_rv32i|dmem_out[10]~output                                        ; |data_mem_rv32i|dmem_out[10]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[10]                                               ; |data_mem_rv32i|dmem_out[10]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[11]~output                                        ; |data_mem_rv32i|dmem_out[11]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[11]                                               ; |data_mem_rv32i|dmem_out[11]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[12]~output                                        ; |data_mem_rv32i|dmem_out[12]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[12]                                               ; |data_mem_rv32i|dmem_out[12]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[13]~output                                        ; |data_mem_rv32i|dmem_out[13]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[13]                                               ; |data_mem_rv32i|dmem_out[13]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[14]~output                                        ; |data_mem_rv32i|dmem_out[14]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[14]                                               ; |data_mem_rv32i|dmem_out[14]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[15]~output                                        ; |data_mem_rv32i|dmem_out[15]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[15]                                               ; |data_mem_rv32i|dmem_out[15]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[16]~output                                        ; |data_mem_rv32i|dmem_out[16]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[16]                                               ; |data_mem_rv32i|dmem_out[16]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[17]~output                                        ; |data_mem_rv32i|dmem_out[17]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[17]                                               ; |data_mem_rv32i|dmem_out[17]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[18]~output                                        ; |data_mem_rv32i|dmem_out[18]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[18]                                               ; |data_mem_rv32i|dmem_out[18]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[19]~output                                        ; |data_mem_rv32i|dmem_out[19]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[19]                                               ; |data_mem_rv32i|dmem_out[19]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[20]~output                                        ; |data_mem_rv32i|dmem_out[20]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[20]                                               ; |data_mem_rv32i|dmem_out[20]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[21]~output                                        ; |data_mem_rv32i|dmem_out[21]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[21]                                               ; |data_mem_rv32i|dmem_out[21]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[22]~output                                        ; |data_mem_rv32i|dmem_out[22]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[22]                                               ; |data_mem_rv32i|dmem_out[22]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[23]~output                                        ; |data_mem_rv32i|dmem_out[23]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[23]                                               ; |data_mem_rv32i|dmem_out[23]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[24]~output                                        ; |data_mem_rv32i|dmem_out[24]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[24]                                               ; |data_mem_rv32i|dmem_out[24]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[25]~output                                        ; |data_mem_rv32i|dmem_out[25]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[25]                                               ; |data_mem_rv32i|dmem_out[25]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[26]~output                                        ; |data_mem_rv32i|dmem_out[26]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[26]                                               ; |data_mem_rv32i|dmem_out[26]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[27]~output                                        ; |data_mem_rv32i|dmem_out[27]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[27]                                               ; |data_mem_rv32i|dmem_out[27]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[28]~output                                        ; |data_mem_rv32i|dmem_out[28]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[28]                                               ; |data_mem_rv32i|dmem_out[28]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[29]~output                                        ; |data_mem_rv32i|dmem_out[29]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[29]                                               ; |data_mem_rv32i|dmem_out[29]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[30]~output                                        ; |data_mem_rv32i|dmem_out[30]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[30]                                               ; |data_mem_rv32i|dmem_out[30]                                         ; padout           ;
+; |data_mem_rv32i|dmem_out[31]~output                                        ; |data_mem_rv32i|dmem_out[31]~output                                  ; o                ;
+; |data_mem_rv32i|dmem_out[31]                                               ; |data_mem_rv32i|dmem_out[31]                                         ; padout           ;
+; |data_mem_rv32i|clock~input                                                ; |data_mem_rv32i|clock~input                                          ; o                ;
+; |data_mem_rv32i|clock                                                      ; |data_mem_rv32i|clock                                                ; padout           ;
+; |data_mem_rv32i|rs2[0]~input                                               ; |data_mem_rv32i|rs2[0]~input                                         ; o                ;
+; |data_mem_rv32i|rs2[0]                                                     ; |data_mem_rv32i|rs2[0]                                               ; padout           ;
+; |data_mem_rv32i|dmem_addr[2]~input                                         ; |data_mem_rv32i|dmem_addr[2]~input                                   ; o                ;
+; |data_mem_rv32i|dmem_addr[2]                                               ; |data_mem_rv32i|dmem_addr[2]                                         ; padout           ;
+; |data_mem_rv32i|dmem_addr[3]~input                                         ; |data_mem_rv32i|dmem_addr[3]~input                                   ; o                ;
+; |data_mem_rv32i|dmem_addr[3]                                               ; |data_mem_rv32i|dmem_addr[3]                                         ; padout           ;
+; |data_mem_rv32i|dmem_addr[4]~input                                         ; |data_mem_rv32i|dmem_addr[4]~input                                   ; o                ;
+; |data_mem_rv32i|dmem_addr[4]                                               ; |data_mem_rv32i|dmem_addr[4]                                         ; padout           ;
+; |data_mem_rv32i|dmem_addr[5]~input                                         ; |data_mem_rv32i|dmem_addr[5]~input                                   ; o                ;
+; |data_mem_rv32i|dmem_addr[5]                                               ; |data_mem_rv32i|dmem_addr[5]                                         ; padout           ;
+; |data_mem_rv32i|dmem_addr[6]~input                                         ; |data_mem_rv32i|dmem_addr[6]~input                                   ; o                ;
+; |data_mem_rv32i|dmem_addr[6]                                               ; |data_mem_rv32i|dmem_addr[6]                                         ; padout           ;
+; |data_mem_rv32i|dmem_addr[7]~input                                         ; |data_mem_rv32i|dmem_addr[7]~input                                   ; o                ;
+; |data_mem_rv32i|dmem_addr[7]                                               ; |data_mem_rv32i|dmem_addr[7]                                         ; padout           ;
+; |data_mem_rv32i|rs2[1]~input                                               ; |data_mem_rv32i|rs2[1]~input                                         ; o                ;
+; |data_mem_rv32i|rs2[1]                                                     ; |data_mem_rv32i|rs2[1]                                               ; padout           ;
+; |data_mem_rv32i|rs2[2]~input                                               ; |data_mem_rv32i|rs2[2]~input                                         ; o                ;
+; |data_mem_rv32i|rs2[2]                                                     ; |data_mem_rv32i|rs2[2]                                               ; padout           ;
+; |data_mem_rv32i|rs2[3]~input                                               ; |data_mem_rv32i|rs2[3]~input                                         ; o                ;
+; |data_mem_rv32i|rs2[3]                                                     ; |data_mem_rv32i|rs2[3]                                               ; padout           ;
+; |data_mem_rv32i|rs2[4]~input                                               ; |data_mem_rv32i|rs2[4]~input                                         ; o                ;
+; |data_mem_rv32i|rs2[4]                                                     ; |data_mem_rv32i|rs2[4]                                               ; padout           ;
+; |data_mem_rv32i|rs2[5]~input                                               ; |data_mem_rv32i|rs2[5]~input                                         ; o                ;
+; |data_mem_rv32i|rs2[5]                                                     ; |data_mem_rv32i|rs2[5]                                               ; padout           ;
+; |data_mem_rv32i|rs2[6]~input                                               ; |data_mem_rv32i|rs2[6]~input                                         ; o                ;
+; |data_mem_rv32i|rs2[6]                                                     ; |data_mem_rv32i|rs2[6]                                               ; padout           ;
+; |data_mem_rv32i|rs2[7]~input                                               ; |data_mem_rv32i|rs2[7]~input                                         ; o                ;
+; |data_mem_rv32i|rs2[7]                                                     ; |data_mem_rv32i|rs2[7]                                               ; padout           ;
+; |data_mem_rv32i|rs2[8]~input                                               ; |data_mem_rv32i|rs2[8]~input                                         ; o                ;
+; |data_mem_rv32i|rs2[8]                                                     ; |data_mem_rv32i|rs2[8]                                               ; padout           ;
+; |data_mem_rv32i|rs2[9]~input                                               ; |data_mem_rv32i|rs2[9]~input                                         ; o                ;
+; |data_mem_rv32i|rs2[9]                                                     ; |data_mem_rv32i|rs2[9]                                               ; padout           ;
+; |data_mem_rv32i|rs2[10]~input                                              ; |data_mem_rv32i|rs2[10]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[10]                                                    ; |data_mem_rv32i|rs2[10]                                              ; padout           ;
+; |data_mem_rv32i|rs2[11]~input                                              ; |data_mem_rv32i|rs2[11]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[11]                                                    ; |data_mem_rv32i|rs2[11]                                              ; padout           ;
+; |data_mem_rv32i|rs2[12]~input                                              ; |data_mem_rv32i|rs2[12]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[12]                                                    ; |data_mem_rv32i|rs2[12]                                              ; padout           ;
+; |data_mem_rv32i|rs2[13]~input                                              ; |data_mem_rv32i|rs2[13]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[13]                                                    ; |data_mem_rv32i|rs2[13]                                              ; padout           ;
+; |data_mem_rv32i|rs2[14]~input                                              ; |data_mem_rv32i|rs2[14]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[14]                                                    ; |data_mem_rv32i|rs2[14]                                              ; padout           ;
+; |data_mem_rv32i|rs2[15]~input                                              ; |data_mem_rv32i|rs2[15]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[15]                                                    ; |data_mem_rv32i|rs2[15]                                              ; padout           ;
+; |data_mem_rv32i|rs2[16]~input                                              ; |data_mem_rv32i|rs2[16]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[16]                                                    ; |data_mem_rv32i|rs2[16]                                              ; padout           ;
+; |data_mem_rv32i|rs2[17]~input                                              ; |data_mem_rv32i|rs2[17]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[17]                                                    ; |data_mem_rv32i|rs2[17]                                              ; padout           ;
+; |data_mem_rv32i|rs2[18]~input                                              ; |data_mem_rv32i|rs2[18]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[18]                                                    ; |data_mem_rv32i|rs2[18]                                              ; padout           ;
+; |data_mem_rv32i|rs2[19]~input                                              ; |data_mem_rv32i|rs2[19]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[19]                                                    ; |data_mem_rv32i|rs2[19]                                              ; padout           ;
+; |data_mem_rv32i|rs2[20]~input                                              ; |data_mem_rv32i|rs2[20]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[20]                                                    ; |data_mem_rv32i|rs2[20]                                              ; padout           ;
+; |data_mem_rv32i|rs2[21]~input                                              ; |data_mem_rv32i|rs2[21]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[21]                                                    ; |data_mem_rv32i|rs2[21]                                              ; padout           ;
+; |data_mem_rv32i|rs2[22]~input                                              ; |data_mem_rv32i|rs2[22]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[22]                                                    ; |data_mem_rv32i|rs2[22]                                              ; padout           ;
+; |data_mem_rv32i|rs2[23]~input                                              ; |data_mem_rv32i|rs2[23]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[23]                                                    ; |data_mem_rv32i|rs2[23]                                              ; padout           ;
+; |data_mem_rv32i|rs2[24]~input                                              ; |data_mem_rv32i|rs2[24]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[24]                                                    ; |data_mem_rv32i|rs2[24]                                              ; padout           ;
+; |data_mem_rv32i|rs2[25]~input                                              ; |data_mem_rv32i|rs2[25]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[25]                                                    ; |data_mem_rv32i|rs2[25]                                              ; padout           ;
+; |data_mem_rv32i|rs2[26]~input                                              ; |data_mem_rv32i|rs2[26]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[26]                                                    ; |data_mem_rv32i|rs2[26]                                              ; padout           ;
+; |data_mem_rv32i|rs2[27]~input                                              ; |data_mem_rv32i|rs2[27]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[27]                                                    ; |data_mem_rv32i|rs2[27]                                              ; padout           ;
+; |data_mem_rv32i|rs2[28]~input                                              ; |data_mem_rv32i|rs2[28]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[28]                                                    ; |data_mem_rv32i|rs2[28]                                              ; padout           ;
+; |data_mem_rv32i|rs2[29]~input                                              ; |data_mem_rv32i|rs2[29]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[29]                                                    ; |data_mem_rv32i|rs2[29]                                              ; padout           ;
+; |data_mem_rv32i|rs2[30]~input                                              ; |data_mem_rv32i|rs2[30]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[30]                                                    ; |data_mem_rv32i|rs2[30]                                              ; padout           ;
+; |data_mem_rv32i|rs2[31]~input                                              ; |data_mem_rv32i|rs2[31]~input                                        ; o                ;
+; |data_mem_rv32i|rs2[31]                                                    ; |data_mem_rv32i|rs2[31]                                              ; padout           ;
+; |data_mem_rv32i|clock~inputclkctrl                                         ; |data_mem_rv32i|clock~inputclkctrl                                   ; outclk           ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                         ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |data_mem_rv32i|Mux34~0               ; |data_mem_rv32i|Mux34~0               ; combout          ;
+; |data_mem_rv32i|Mux34~2               ; |data_mem_rv32i|Mux34~2               ; combout          ;
+; |data_mem_rv32i|Mux20~0               ; |data_mem_rv32i|Mux20~0               ; combout          ;
+; |data_mem_rv32i|Mux2~0                ; |data_mem_rv32i|Mux2~0                ; combout          ;
+; |data_mem_rv32i|Mux19~0               ; |data_mem_rv32i|Mux19~0               ; combout          ;
+; |data_mem_rv32i|Mux13~0               ; |data_mem_rv32i|Mux13~0               ; combout          ;
+; |data_mem_rv32i|Mux11~0               ; |data_mem_rv32i|Mux11~0               ; combout          ;
+; |data_mem_rv32i|Mux4~0                ; |data_mem_rv32i|Mux4~0                ; combout          ;
+; |data_mem_rv32i|Mux11~2               ; |data_mem_rv32i|Mux11~2               ; combout          ;
+; |data_mem_rv32i|Mux0~0                ; |data_mem_rv32i|Mux0~0                ; combout          ;
+; |data_mem_rv32i|dmem_addr[10]         ; |data_mem_rv32i|dmem_addr[10]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[11]         ; |data_mem_rv32i|dmem_addr[11]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[12]         ; |data_mem_rv32i|dmem_addr[12]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[13]         ; |data_mem_rv32i|dmem_addr[13]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[14]         ; |data_mem_rv32i|dmem_addr[14]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[15]         ; |data_mem_rv32i|dmem_addr[15]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[16]         ; |data_mem_rv32i|dmem_addr[16]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[17]         ; |data_mem_rv32i|dmem_addr[17]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[18]         ; |data_mem_rv32i|dmem_addr[18]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[19]         ; |data_mem_rv32i|dmem_addr[19]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[20]         ; |data_mem_rv32i|dmem_addr[20]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[21]         ; |data_mem_rv32i|dmem_addr[21]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[22]         ; |data_mem_rv32i|dmem_addr[22]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[23]         ; |data_mem_rv32i|dmem_addr[23]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[24]         ; |data_mem_rv32i|dmem_addr[24]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[25]         ; |data_mem_rv32i|dmem_addr[25]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[26]         ; |data_mem_rv32i|dmem_addr[26]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[27]         ; |data_mem_rv32i|dmem_addr[27]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[28]         ; |data_mem_rv32i|dmem_addr[28]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[29]         ; |data_mem_rv32i|dmem_addr[29]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[30]         ; |data_mem_rv32i|dmem_addr[30]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[31]         ; |data_mem_rv32i|dmem_addr[31]         ; padout           ;
+; |data_mem_rv32i|cu_store~input        ; |data_mem_rv32i|cu_store~input        ; o                ;
+; |data_mem_rv32i|cu_store              ; |data_mem_rv32i|cu_store              ; padout           ;
+; |data_mem_rv32i|dmem_addr[0]~input    ; |data_mem_rv32i|dmem_addr[0]~input    ; o                ;
+; |data_mem_rv32i|dmem_addr[0]          ; |data_mem_rv32i|dmem_addr[0]          ; padout           ;
+; |data_mem_rv32i|cu_storetype[0]~input ; |data_mem_rv32i|cu_storetype[0]~input ; o                ;
+; |data_mem_rv32i|cu_storetype[0]       ; |data_mem_rv32i|cu_storetype[0]       ; padout           ;
+; |data_mem_rv32i|dmem_addr[1]~input    ; |data_mem_rv32i|dmem_addr[1]~input    ; o                ;
+; |data_mem_rv32i|dmem_addr[1]          ; |data_mem_rv32i|dmem_addr[1]          ; padout           ;
+; |data_mem_rv32i|cu_storetype[1]~input ; |data_mem_rv32i|cu_storetype[1]~input ; o                ;
+; |data_mem_rv32i|cu_storetype[1]       ; |data_mem_rv32i|cu_storetype[1]       ; padout           ;
+; |data_mem_rv32i|dmem_addr[9]~input    ; |data_mem_rv32i|dmem_addr[9]~input    ; o                ;
+; |data_mem_rv32i|dmem_addr[9]          ; |data_mem_rv32i|dmem_addr[9]          ; padout           ;
++---------------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                         ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |data_mem_rv32i|Mux34~0               ; |data_mem_rv32i|Mux34~0               ; combout          ;
+; |data_mem_rv32i|Mux34~2               ; |data_mem_rv32i|Mux34~2               ; combout          ;
+; |data_mem_rv32i|Mux20~0               ; |data_mem_rv32i|Mux20~0               ; combout          ;
+; |data_mem_rv32i|Mux2~0                ; |data_mem_rv32i|Mux2~0                ; combout          ;
+; |data_mem_rv32i|Mux19~0               ; |data_mem_rv32i|Mux19~0               ; combout          ;
+; |data_mem_rv32i|Mux13~0               ; |data_mem_rv32i|Mux13~0               ; combout          ;
+; |data_mem_rv32i|Mux11~0               ; |data_mem_rv32i|Mux11~0               ; combout          ;
+; |data_mem_rv32i|Mux4~0                ; |data_mem_rv32i|Mux4~0                ; combout          ;
+; |data_mem_rv32i|Mux11~2               ; |data_mem_rv32i|Mux11~2               ; combout          ;
+; |data_mem_rv32i|Mux0~0                ; |data_mem_rv32i|Mux0~0                ; combout          ;
+; |data_mem_rv32i|dmem_addr[10]         ; |data_mem_rv32i|dmem_addr[10]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[11]         ; |data_mem_rv32i|dmem_addr[11]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[12]         ; |data_mem_rv32i|dmem_addr[12]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[13]         ; |data_mem_rv32i|dmem_addr[13]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[14]         ; |data_mem_rv32i|dmem_addr[14]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[15]         ; |data_mem_rv32i|dmem_addr[15]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[16]         ; |data_mem_rv32i|dmem_addr[16]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[17]         ; |data_mem_rv32i|dmem_addr[17]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[18]         ; |data_mem_rv32i|dmem_addr[18]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[19]         ; |data_mem_rv32i|dmem_addr[19]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[20]         ; |data_mem_rv32i|dmem_addr[20]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[21]         ; |data_mem_rv32i|dmem_addr[21]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[22]         ; |data_mem_rv32i|dmem_addr[22]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[23]         ; |data_mem_rv32i|dmem_addr[23]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[24]         ; |data_mem_rv32i|dmem_addr[24]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[25]         ; |data_mem_rv32i|dmem_addr[25]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[26]         ; |data_mem_rv32i|dmem_addr[26]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[27]         ; |data_mem_rv32i|dmem_addr[27]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[28]         ; |data_mem_rv32i|dmem_addr[28]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[29]         ; |data_mem_rv32i|dmem_addr[29]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[30]         ; |data_mem_rv32i|dmem_addr[30]         ; padout           ;
+; |data_mem_rv32i|dmem_addr[31]         ; |data_mem_rv32i|dmem_addr[31]         ; padout           ;
+; |data_mem_rv32i|cu_store~input        ; |data_mem_rv32i|cu_store~input        ; o                ;
+; |data_mem_rv32i|cu_store              ; |data_mem_rv32i|cu_store              ; padout           ;
+; |data_mem_rv32i|dmem_addr[0]~input    ; |data_mem_rv32i|dmem_addr[0]~input    ; o                ;
+; |data_mem_rv32i|dmem_addr[0]          ; |data_mem_rv32i|dmem_addr[0]          ; padout           ;
+; |data_mem_rv32i|cu_storetype[0]~input ; |data_mem_rv32i|cu_storetype[0]~input ; o                ;
+; |data_mem_rv32i|cu_storetype[0]       ; |data_mem_rv32i|cu_storetype[0]       ; padout           ;
+; |data_mem_rv32i|dmem_addr[1]~input    ; |data_mem_rv32i|dmem_addr[1]~input    ; o                ;
+; |data_mem_rv32i|dmem_addr[1]          ; |data_mem_rv32i|dmem_addr[1]          ; padout           ;
+; |data_mem_rv32i|cu_storetype[1]~input ; |data_mem_rv32i|cu_storetype[1]~input ; o                ;
+; |data_mem_rv32i|cu_storetype[1]       ; |data_mem_rv32i|cu_storetype[1]       ; padout           ;
+; |data_mem_rv32i|dmem_addr[8]~input    ; |data_mem_rv32i|dmem_addr[8]~input    ; o                ;
+; |data_mem_rv32i|dmem_addr[8]          ; |data_mem_rv32i|dmem_addr[8]          ; padout           ;
+; |data_mem_rv32i|dmem_addr[9]~input    ; |data_mem_rv32i|dmem_addr[9]~input    ; o                ;
+; |data_mem_rv32i|dmem_addr[9]          ; |data_mem_rv32i|dmem_addr[9]          ; padout           ;
++---------------------------------------+---------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Nov 07 20:50:29 2025
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Tugas_3 -c data_mem_rv32i
+Info: Using vector source file "D:/Academic/ITB/Semester_5/EL3011 Arsitektur_Komputer/Praktikum/Hasil Akhir Praktikum/EL3011_1_20251106_13223095/1_Lab/Tugas_3/data_mem_rv32i.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      82.38 %
+Info: Number of transitions in simulation is 8946
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 162 megabytes
+    Info: Processing ended: Fri Nov 07 20:50:30 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
