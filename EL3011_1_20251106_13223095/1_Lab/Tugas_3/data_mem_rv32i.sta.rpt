@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for data_mem_rv32i
-Fri Nov 07 20:50:13 2025
+Sat Nov 08 09:15:24 2025
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -1409,7 +1409,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II TimeQuest Timing Analyzer
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Nov 07 20:50:10 2025
+    Info: Processing started: Sat Nov 08 09:15:21 2025
 Info: Command: quartus_sta Tugas_3 -c data_mem_rv32i
 Info: qsta_default_script.tcl version: #1
 Info: high junction temperature operating condition is not set. Assuming a default value of '85'.
@@ -1462,7 +1462,7 @@ Info: Design is not fully constrained for setup requirements
 Info: Design is not fully constrained for hold requirements
 Info: Quartus II TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 255 megabytes
-    Info: Processing ended: Fri Nov 07 20:50:13 2025
+    Info: Processing ended: Sat Nov 08 09:15:24 2025
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 

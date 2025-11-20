@@ -23,10 +23,10 @@ applicable agreement for further details.
 VECTOR("D:/Academic/ITB/Semester_5/EL3011 Arsitektur_Komputer/Praktikum/Hasil Akhir Praktikum/EL3011_1_20251106_13223095/1_Lab/Tugas_4/db/reg_file_rv32i.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 497284;
-		NUMERATOR = 1073;
-		DENOMINATOR = 497284;
+		ZBEGIN = 206830;
+		ZEND = 262536;
+		NUMERATOR = 522;
+		DENOMINATOR = 55706;
 		TOP_INDEX = 1;
 	}
 	CLOCK{
@@ -1001,13 +1001,13 @@ VECTOR("D:/Academic/ITB/Semester_5/EL3011 Arsitektur_Komputer/Praktikum/Hasil Ak
 		TOP_INDEX = 0;
 	}
 	CLOCK{
-		PERIOD = 40000;
-		OFFSET = 30000;
+		PERIOD = 30000;
+		OFFSET = 20000;
 		DUTY_CYCLE = 50;
 	}
 	RANDOM_VALUE{
 		INTERVAL_TYPE = USER;
-		USER_INTERVAL = 40000;
+		USER_INTERVAL = 30000;
 	}
 	LINE{
 		SIGNAL = "clock";

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for reg_file_rv32i
-Thu Nov 06 14:27:38 2025
+Sat Nov 08 09:56:20 2025
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -42,7 +42,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 06 14:27:38 2025        ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 08 09:56:20 2025        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; reg_file_rv32i                               ;
 ; Top-level Entity Name              ; reg_file_rv32i                               ;
@@ -270,7 +270,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Nov 06 14:27:23 2025
+    Info: Processing started: Sat Nov 08 09:56:05 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Tugas_4 -c reg_file_rv32i
 Info: Found 1 design units, including 1 entities, in source file reg_file_rv32i.v
     Info: Found entity 1: reg_file_rv32i
@@ -281,8 +281,8 @@ Info: Implemented 2510 device resources after synthesis - the final resource cou
     Info: Implemented 64 output pins
     Info: Implemented 2397 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 229 megabytes
-    Info: Processing ended: Thu Nov 06 14:27:38 2025
+    Info: Peak virtual memory: 230 megabytes
+    Info: Processing ended: Sat Nov 08 09:56:20 2025
     Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:16
 

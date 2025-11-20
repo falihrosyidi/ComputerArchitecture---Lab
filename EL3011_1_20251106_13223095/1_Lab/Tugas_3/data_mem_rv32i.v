@@ -1,11 +1,11 @@
 // Praktikum EL3011 Arsitektur Sistem Komputer 
-// Modul        : 2 
+// Modul        : 1 
 // Percobaan    : 3 
-// Tanggal      : 18 September 2025 
-// Kelompok     : VI 
-// Rombongan    : A 
-// Nama (NIM) 1 : <isi> 
-// Nama (NIM) 2 : <isi> 
+// Tanggal      : 6 November 2025 
+// Kelompok     : 
+// Rombongan    :  
+// Nama (NIM) 1 : Muammar Qadafi (13223094) 
+// Nama (NIM) 2 : Muhammad Falih Rosyidi (13223095
 // Nama File    : data_mem_rv32i.v 
 // Deskripsi    : Data Memory 256 x 32-bit (RV32I) via ALTSYNCRAM 
 

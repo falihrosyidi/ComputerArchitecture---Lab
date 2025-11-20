@@ -1,11 +1,11 @@
 // Praktikum EL3011 Arsitektur Sistem Komputer 
-// Modul        : 2 
-// Percobaan    : 1 
-// Tanggal      : 18 September 2025 
-// Kelompok     : VI 
-// Rombongan    : A 
-// Nama (NIM) 1 : <isi> 
-// Nama (NIM) 2 : <isi> 
+// Modul        : 1 
+// Percobaan    : 2 
+// Tanggal      : 6 November 2025 
+// Kelompok     : 
+// Rombongan    :  
+// Nama (NIM) 1 : Muammar Qadafi (13223094) 
+// Nama (NIM) 2 : Muhammad Falih Rosyidi (13223095) 
 // Nama File    : instr_rom_rv32i.v 
 // Deskripsi    : Instruction ROM 32x32 (RV32I) via ALTSYNCRAM + .mif 
 `timescale 1ns/1ps 

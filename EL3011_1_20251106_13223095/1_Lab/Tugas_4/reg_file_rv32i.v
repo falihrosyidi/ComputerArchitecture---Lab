@@ -1,10 +1,10 @@
-// Modul        : 2 
+// Modul        : 1 
 // Percobaan    : 4 
-// Tanggal      : 18 September 2025 
-// Kelompok     : VI 
-// Rombongan    : A 
-// Nama (NIM) 1 : <isi> 
-// Nama (NIM) 2 : <isi> 
+// Tanggal      : 6 November 2025
+// Kelompok     : 
+// Rombongan    :  
+// Nama (NIM) 1 : Muammar Qadafi (13223094) 
+// Nama (NIM) 2 : Muhammad Falih Rosyidi (13223095)
 // Nama File    : reg_file_rv32i.v 
 // Deskripsi    : Register file RV32I, 32x32, 2 read ports, 1 write port. 
 // x0 selalu 0; write @posedge, read @negedge  

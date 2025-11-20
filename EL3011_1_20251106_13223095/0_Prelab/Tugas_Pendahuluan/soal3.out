@@ -1,0 +1,18 @@
+# Praktikum EL3011 Arsitektur Sistem Komputer 
+# Modul        : 1
+# Percobaan    : 1 (Tugas Pendahuluan) 
+# Tanggal      : 4 November 2025 
+# Kelompok     :  
+# Rombongan    :  
+# Nama (NIM) 1 : Muammar Qadafi (13223094) 
+# Nama (NIM) 2 : Muhammad Falih Rosyidi (13223095) 
+# Nama File    : soal3.out 
+# Deskripsi    : Machine Code dari Assembly kode tugas pendahuluan no 3 mengenai sum dari i pada looop  <= 10
+
+0x00100293
+0x00000333
+0x00B00393
+0x00530333
+0x00128293
+0xFE72CCE3
+0x00000513

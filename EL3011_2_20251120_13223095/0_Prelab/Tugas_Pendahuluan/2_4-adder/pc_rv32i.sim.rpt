@@ -1,0 +1,392 @@
+Simulator report for pc_rv32i
+Tue Nov 18 23:59:26 2025
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 230 nodes    ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 11326        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C5F256C6  ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                            ;
++--------------------------------------------------------------------------------------------+----------------------------------+---------------+
+; Option                                                                                     ; Setting                          ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------------+---------------+
+; Simulation mode                                                                            ; Timing                           ; Timing        ;
+; Start time                                                                                 ; 0 ns                             ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                             ;               ;
+; Vector input source                                                                        ; ../3_ProgramCounter/pc_rv32i.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                               ; On            ;
+; Check outputs                                                                              ; Off                              ; Off           ;
+; Report simulation coverage                                                                 ; On                               ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                               ; On            ;
+; Display missing 1-value coverage report                                                    ; On                               ; On            ;
+; Display missing 0-value coverage report                                                    ; On                               ; On            ;
+; Detect setup and hold time violations                                                      ; Off                              ; Off           ;
+; Detect glitches                                                                            ; Off                              ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                              ; Off           ;
+; Generate Signal Activity File                                                              ; Off                              ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                              ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                              ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                               ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                       ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                              ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                              ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                             ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                        ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                        ; Transport     ;
++--------------------------------------------------------------------------------------------+----------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 230          ;
+; Total output ports checked                          ; 230          ;
+; Total output ports with complete 1/0-value coverage ; 230          ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                              ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |pc_rv32i|PCout[0]~reg0_emulated  ; |pc_rv32i|PCout[0]~reg0_emulated  ; q                ;
+; |pc_rv32i|PCout[0]~reg0head_lut   ; |pc_rv32i|PCout[0]~reg0head_lut   ; combout          ;
+; |pc_rv32i|PCout[1]~reg0_emulated  ; |pc_rv32i|PCout[1]~reg0_emulated  ; q                ;
+; |pc_rv32i|PCout[1]~reg0head_lut   ; |pc_rv32i|PCout[1]~reg0head_lut   ; combout          ;
+; |pc_rv32i|PCout[2]~reg0_emulated  ; |pc_rv32i|PCout[2]~reg0_emulated  ; q                ;
+; |pc_rv32i|PCout[2]~reg0head_lut   ; |pc_rv32i|PCout[2]~reg0head_lut   ; combout          ;
+; |pc_rv32i|PCout[3]~reg0_emulated  ; |pc_rv32i|PCout[3]~reg0_emulated  ; q                ;
+; |pc_rv32i|PCout[3]~reg0head_lut   ; |pc_rv32i|PCout[3]~reg0head_lut   ; combout          ;
+; |pc_rv32i|PCout[4]~reg0_emulated  ; |pc_rv32i|PCout[4]~reg0_emulated  ; q                ;
+; |pc_rv32i|PCout[4]~reg0head_lut   ; |pc_rv32i|PCout[4]~reg0head_lut   ; combout          ;
+; |pc_rv32i|PCout[5]~reg0_emulated  ; |pc_rv32i|PCout[5]~reg0_emulated  ; q                ;
+; |pc_rv32i|PCout[5]~reg0head_lut   ; |pc_rv32i|PCout[5]~reg0head_lut   ; combout          ;
+; |pc_rv32i|PCout[6]~reg0_emulated  ; |pc_rv32i|PCout[6]~reg0_emulated  ; q                ;
+; |pc_rv32i|PCout[6]~reg0head_lut   ; |pc_rv32i|PCout[6]~reg0head_lut   ; combout          ;
+; |pc_rv32i|PCout[7]~reg0_emulated  ; |pc_rv32i|PCout[7]~reg0_emulated  ; q                ;
+; |pc_rv32i|PCout[7]~reg0head_lut   ; |pc_rv32i|PCout[7]~reg0head_lut   ; combout          ;
+; |pc_rv32i|PCout[8]~reg0_emulated  ; |pc_rv32i|PCout[8]~reg0_emulated  ; q                ;
+; |pc_rv32i|PCout[8]~reg0head_lut   ; |pc_rv32i|PCout[8]~reg0head_lut   ; combout          ;
+; |pc_rv32i|PCout[9]~reg0_emulated  ; |pc_rv32i|PCout[9]~reg0_emulated  ; q                ;
+; |pc_rv32i|PCout[9]~reg0head_lut   ; |pc_rv32i|PCout[9]~reg0head_lut   ; combout          ;
+; |pc_rv32i|PCout[10]~reg0_emulated ; |pc_rv32i|PCout[10]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[10]~reg0head_lut  ; |pc_rv32i|PCout[10]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[11]~reg0_emulated ; |pc_rv32i|PCout[11]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[11]~reg0head_lut  ; |pc_rv32i|PCout[11]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[12]~reg0_emulated ; |pc_rv32i|PCout[12]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[12]~reg0head_lut  ; |pc_rv32i|PCout[12]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[13]~reg0_emulated ; |pc_rv32i|PCout[13]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[13]~reg0head_lut  ; |pc_rv32i|PCout[13]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[14]~reg0_emulated ; |pc_rv32i|PCout[14]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[14]~reg0head_lut  ; |pc_rv32i|PCout[14]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[15]~reg0_emulated ; |pc_rv32i|PCout[15]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[15]~reg0head_lut  ; |pc_rv32i|PCout[15]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[16]~reg0_emulated ; |pc_rv32i|PCout[16]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[16]~reg0head_lut  ; |pc_rv32i|PCout[16]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[17]~reg0_emulated ; |pc_rv32i|PCout[17]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[17]~reg0head_lut  ; |pc_rv32i|PCout[17]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[18]~reg0_emulated ; |pc_rv32i|PCout[18]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[18]~reg0head_lut  ; |pc_rv32i|PCout[18]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[19]~reg0_emulated ; |pc_rv32i|PCout[19]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[19]~reg0head_lut  ; |pc_rv32i|PCout[19]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[20]~reg0_emulated ; |pc_rv32i|PCout[20]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[20]~reg0head_lut  ; |pc_rv32i|PCout[20]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[21]~reg0_emulated ; |pc_rv32i|PCout[21]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[21]~reg0head_lut  ; |pc_rv32i|PCout[21]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[22]~reg0_emulated ; |pc_rv32i|PCout[22]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[22]~reg0head_lut  ; |pc_rv32i|PCout[22]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[23]~reg0_emulated ; |pc_rv32i|PCout[23]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[23]~reg0head_lut  ; |pc_rv32i|PCout[23]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[24]~reg0_emulated ; |pc_rv32i|PCout[24]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[24]~reg0head_lut  ; |pc_rv32i|PCout[24]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[25]~reg0_emulated ; |pc_rv32i|PCout[25]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[25]~reg0head_lut  ; |pc_rv32i|PCout[25]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[26]~reg0_emulated ; |pc_rv32i|PCout[26]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[26]~reg0head_lut  ; |pc_rv32i|PCout[26]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[27]~reg0_emulated ; |pc_rv32i|PCout[27]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[27]~reg0head_lut  ; |pc_rv32i|PCout[27]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[28]~reg0_emulated ; |pc_rv32i|PCout[28]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[28]~reg0head_lut  ; |pc_rv32i|PCout[28]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[29]~reg0_emulated ; |pc_rv32i|PCout[29]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[29]~reg0head_lut  ; |pc_rv32i|PCout[29]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[30]~reg0_emulated ; |pc_rv32i|PCout[30]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[30]~reg0head_lut  ; |pc_rv32i|PCout[30]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[31]~reg0_emulated ; |pc_rv32i|PCout[31]~reg0_emulated ; q                ;
+; |pc_rv32i|PCout[31]~reg0head_lut  ; |pc_rv32i|PCout[31]~reg0head_lut  ; combout          ;
+; |pc_rv32i|PCout[0]~reg0latch      ; |pc_rv32i|PCout[0]~reg0latch      ; combout          ;
+; |pc_rv32i|PCout[1]~reg0latch      ; |pc_rv32i|PCout[1]~reg0latch      ; combout          ;
+; |pc_rv32i|PCout[2]~reg0latch      ; |pc_rv32i|PCout[2]~reg0latch      ; combout          ;
+; |pc_rv32i|PCout[3]~reg0latch      ; |pc_rv32i|PCout[3]~reg0latch      ; combout          ;
+; |pc_rv32i|PCout[4]~reg0latch      ; |pc_rv32i|PCout[4]~reg0latch      ; combout          ;
+; |pc_rv32i|PCout[5]~reg0latch      ; |pc_rv32i|PCout[5]~reg0latch      ; combout          ;
+; |pc_rv32i|PCout[6]~reg0latch      ; |pc_rv32i|PCout[6]~reg0latch      ; combout          ;
+; |pc_rv32i|PCout[7]~reg0latch      ; |pc_rv32i|PCout[7]~reg0latch      ; combout          ;
+; |pc_rv32i|PCout[8]~reg0latch      ; |pc_rv32i|PCout[8]~reg0latch      ; combout          ;
+; |pc_rv32i|PCout[9]~reg0latch      ; |pc_rv32i|PCout[9]~reg0latch      ; combout          ;
+; |pc_rv32i|PCout[10]~reg0latch     ; |pc_rv32i|PCout[10]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[11]~reg0latch     ; |pc_rv32i|PCout[11]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[12]~reg0latch     ; |pc_rv32i|PCout[12]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[13]~reg0latch     ; |pc_rv32i|PCout[13]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[14]~reg0latch     ; |pc_rv32i|PCout[14]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[15]~reg0latch     ; |pc_rv32i|PCout[15]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[16]~reg0latch     ; |pc_rv32i|PCout[16]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[17]~reg0latch     ; |pc_rv32i|PCout[17]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[18]~reg0latch     ; |pc_rv32i|PCout[18]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[19]~reg0latch     ; |pc_rv32i|PCout[19]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[20]~reg0latch     ; |pc_rv32i|PCout[20]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[21]~reg0latch     ; |pc_rv32i|PCout[21]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[22]~reg0latch     ; |pc_rv32i|PCout[22]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[23]~reg0latch     ; |pc_rv32i|PCout[23]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[24]~reg0latch     ; |pc_rv32i|PCout[24]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[25]~reg0latch     ; |pc_rv32i|PCout[25]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[26]~reg0latch     ; |pc_rv32i|PCout[26]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[27]~reg0latch     ; |pc_rv32i|PCout[27]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[28]~reg0latch     ; |pc_rv32i|PCout[28]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[29]~reg0latch     ; |pc_rv32i|PCout[29]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[30]~reg0latch     ; |pc_rv32i|PCout[30]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[31]~reg0latch     ; |pc_rv32i|PCout[31]~reg0latch     ; combout          ;
+; |pc_rv32i|PCout[0]~output         ; |pc_rv32i|PCout[0]~output         ; o                ;
+; |pc_rv32i|PCout[0]                ; |pc_rv32i|PCout[0]                ; padout           ;
+; |pc_rv32i|PCout[1]~output         ; |pc_rv32i|PCout[1]~output         ; o                ;
+; |pc_rv32i|PCout[1]                ; |pc_rv32i|PCout[1]                ; padout           ;
+; |pc_rv32i|PCout[2]~output         ; |pc_rv32i|PCout[2]~output         ; o                ;
+; |pc_rv32i|PCout[2]                ; |pc_rv32i|PCout[2]                ; padout           ;
+; |pc_rv32i|PCout[3]~output         ; |pc_rv32i|PCout[3]~output         ; o                ;
+; |pc_rv32i|PCout[3]                ; |pc_rv32i|PCout[3]                ; padout           ;
+; |pc_rv32i|PCout[4]~output         ; |pc_rv32i|PCout[4]~output         ; o                ;
+; |pc_rv32i|PCout[4]                ; |pc_rv32i|PCout[4]                ; padout           ;
+; |pc_rv32i|PCout[5]~output         ; |pc_rv32i|PCout[5]~output         ; o                ;
+; |pc_rv32i|PCout[5]                ; |pc_rv32i|PCout[5]                ; padout           ;
+; |pc_rv32i|PCout[6]~output         ; |pc_rv32i|PCout[6]~output         ; o                ;
+; |pc_rv32i|PCout[6]                ; |pc_rv32i|PCout[6]                ; padout           ;
+; |pc_rv32i|PCout[7]~output         ; |pc_rv32i|PCout[7]~output         ; o                ;
+; |pc_rv32i|PCout[7]                ; |pc_rv32i|PCout[7]                ; padout           ;
+; |pc_rv32i|PCout[8]~output         ; |pc_rv32i|PCout[8]~output         ; o                ;
+; |pc_rv32i|PCout[8]                ; |pc_rv32i|PCout[8]                ; padout           ;
+; |pc_rv32i|PCout[9]~output         ; |pc_rv32i|PCout[9]~output         ; o                ;
+; |pc_rv32i|PCout[9]                ; |pc_rv32i|PCout[9]                ; padout           ;
+; |pc_rv32i|PCout[10]~output        ; |pc_rv32i|PCout[10]~output        ; o                ;
+; |pc_rv32i|PCout[10]               ; |pc_rv32i|PCout[10]               ; padout           ;
+; |pc_rv32i|PCout[11]~output        ; |pc_rv32i|PCout[11]~output        ; o                ;
+; |pc_rv32i|PCout[11]               ; |pc_rv32i|PCout[11]               ; padout           ;
+; |pc_rv32i|PCout[12]~output        ; |pc_rv32i|PCout[12]~output        ; o                ;
+; |pc_rv32i|PCout[12]               ; |pc_rv32i|PCout[12]               ; padout           ;
+; |pc_rv32i|PCout[13]~output        ; |pc_rv32i|PCout[13]~output        ; o                ;
+; |pc_rv32i|PCout[13]               ; |pc_rv32i|PCout[13]               ; padout           ;
+; |pc_rv32i|PCout[14]~output        ; |pc_rv32i|PCout[14]~output        ; o                ;
+; |pc_rv32i|PCout[14]               ; |pc_rv32i|PCout[14]               ; padout           ;
+; |pc_rv32i|PCout[15]~output        ; |pc_rv32i|PCout[15]~output        ; o                ;
+; |pc_rv32i|PCout[15]               ; |pc_rv32i|PCout[15]               ; padout           ;
+; |pc_rv32i|PCout[16]~output        ; |pc_rv32i|PCout[16]~output        ; o                ;
+; |pc_rv32i|PCout[16]               ; |pc_rv32i|PCout[16]               ; padout           ;
+; |pc_rv32i|PCout[17]~output        ; |pc_rv32i|PCout[17]~output        ; o                ;
+; |pc_rv32i|PCout[17]               ; |pc_rv32i|PCout[17]               ; padout           ;
+; |pc_rv32i|PCout[18]~output        ; |pc_rv32i|PCout[18]~output        ; o                ;
+; |pc_rv32i|PCout[18]               ; |pc_rv32i|PCout[18]               ; padout           ;
+; |pc_rv32i|PCout[19]~output        ; |pc_rv32i|PCout[19]~output        ; o                ;
+; |pc_rv32i|PCout[19]               ; |pc_rv32i|PCout[19]               ; padout           ;
+; |pc_rv32i|PCout[20]~output        ; |pc_rv32i|PCout[20]~output        ; o                ;
+; |pc_rv32i|PCout[20]               ; |pc_rv32i|PCout[20]               ; padout           ;
+; |pc_rv32i|PCout[21]~output        ; |pc_rv32i|PCout[21]~output        ; o                ;
+; |pc_rv32i|PCout[21]               ; |pc_rv32i|PCout[21]               ; padout           ;
+; |pc_rv32i|PCout[22]~output        ; |pc_rv32i|PCout[22]~output        ; o                ;
+; |pc_rv32i|PCout[22]               ; |pc_rv32i|PCout[22]               ; padout           ;
+; |pc_rv32i|PCout[23]~output        ; |pc_rv32i|PCout[23]~output        ; o                ;
+; |pc_rv32i|PCout[23]               ; |pc_rv32i|PCout[23]               ; padout           ;
+; |pc_rv32i|PCout[24]~output        ; |pc_rv32i|PCout[24]~output        ; o                ;
+; |pc_rv32i|PCout[24]               ; |pc_rv32i|PCout[24]               ; padout           ;
+; |pc_rv32i|PCout[25]~output        ; |pc_rv32i|PCout[25]~output        ; o                ;
+; |pc_rv32i|PCout[25]               ; |pc_rv32i|PCout[25]               ; padout           ;
+; |pc_rv32i|PCout[26]~output        ; |pc_rv32i|PCout[26]~output        ; o                ;
+; |pc_rv32i|PCout[26]               ; |pc_rv32i|PCout[26]               ; padout           ;
+; |pc_rv32i|PCout[27]~output        ; |pc_rv32i|PCout[27]~output        ; o                ;
+; |pc_rv32i|PCout[27]               ; |pc_rv32i|PCout[27]               ; padout           ;
+; |pc_rv32i|PCout[28]~output        ; |pc_rv32i|PCout[28]~output        ; o                ;
+; |pc_rv32i|PCout[28]               ; |pc_rv32i|PCout[28]               ; padout           ;
+; |pc_rv32i|PCout[29]~output        ; |pc_rv32i|PCout[29]~output        ; o                ;
+; |pc_rv32i|PCout[29]               ; |pc_rv32i|PCout[29]               ; padout           ;
+; |pc_rv32i|PCout[30]~output        ; |pc_rv32i|PCout[30]~output        ; o                ;
+; |pc_rv32i|PCout[30]               ; |pc_rv32i|PCout[30]               ; padout           ;
+; |pc_rv32i|PCout[31]~output        ; |pc_rv32i|PCout[31]~output        ; o                ;
+; |pc_rv32i|PCout[31]               ; |pc_rv32i|PCout[31]               ; padout           ;
+; |pc_rv32i|clk~input               ; |pc_rv32i|clk~input               ; o                ;
+; |pc_rv32i|clk                     ; |pc_rv32i|clk                     ; padout           ;
+; |pc_rv32i|PCin[0]~input           ; |pc_rv32i|PCin[0]~input           ; o                ;
+; |pc_rv32i|PCin[0]                 ; |pc_rv32i|PCin[0]                 ; padout           ;
+; |pc_rv32i|PCin[1]~input           ; |pc_rv32i|PCin[1]~input           ; o                ;
+; |pc_rv32i|PCin[1]                 ; |pc_rv32i|PCin[1]                 ; padout           ;
+; |pc_rv32i|PCin[2]~input           ; |pc_rv32i|PCin[2]~input           ; o                ;
+; |pc_rv32i|PCin[2]                 ; |pc_rv32i|PCin[2]                 ; padout           ;
+; |pc_rv32i|PCin[3]~input           ; |pc_rv32i|PCin[3]~input           ; o                ;
+; |pc_rv32i|PCin[3]                 ; |pc_rv32i|PCin[3]                 ; padout           ;
+; |pc_rv32i|PCin[4]~input           ; |pc_rv32i|PCin[4]~input           ; o                ;
+; |pc_rv32i|PCin[4]                 ; |pc_rv32i|PCin[4]                 ; padout           ;
+; |pc_rv32i|PCin[5]~input           ; |pc_rv32i|PCin[5]~input           ; o                ;
+; |pc_rv32i|PCin[5]                 ; |pc_rv32i|PCin[5]                 ; padout           ;
+; |pc_rv32i|PCin[6]~input           ; |pc_rv32i|PCin[6]~input           ; o                ;
+; |pc_rv32i|PCin[6]                 ; |pc_rv32i|PCin[6]                 ; padout           ;
+; |pc_rv32i|PCin[7]~input           ; |pc_rv32i|PCin[7]~input           ; o                ;
+; |pc_rv32i|PCin[7]                 ; |pc_rv32i|PCin[7]                 ; padout           ;
+; |pc_rv32i|PCin[8]~input           ; |pc_rv32i|PCin[8]~input           ; o                ;
+; |pc_rv32i|PCin[8]                 ; |pc_rv32i|PCin[8]                 ; padout           ;
+; |pc_rv32i|PCin[9]~input           ; |pc_rv32i|PCin[9]~input           ; o                ;
+; |pc_rv32i|PCin[9]                 ; |pc_rv32i|PCin[9]                 ; padout           ;
+; |pc_rv32i|PCin[10]~input          ; |pc_rv32i|PCin[10]~input          ; o                ;
+; |pc_rv32i|PCin[10]                ; |pc_rv32i|PCin[10]                ; padout           ;
+; |pc_rv32i|PCin[11]~input          ; |pc_rv32i|PCin[11]~input          ; o                ;
+; |pc_rv32i|PCin[11]                ; |pc_rv32i|PCin[11]                ; padout           ;
+; |pc_rv32i|PCin[12]~input          ; |pc_rv32i|PCin[12]~input          ; o                ;
+; |pc_rv32i|PCin[12]                ; |pc_rv32i|PCin[12]                ; padout           ;
+; |pc_rv32i|PCin[13]~input          ; |pc_rv32i|PCin[13]~input          ; o                ;
+; |pc_rv32i|PCin[13]                ; |pc_rv32i|PCin[13]                ; padout           ;
+; |pc_rv32i|PCin[14]~input          ; |pc_rv32i|PCin[14]~input          ; o                ;
+; |pc_rv32i|PCin[14]                ; |pc_rv32i|PCin[14]                ; padout           ;
+; |pc_rv32i|PCin[15]~input          ; |pc_rv32i|PCin[15]~input          ; o                ;
+; |pc_rv32i|PCin[15]                ; |pc_rv32i|PCin[15]                ; padout           ;
+; |pc_rv32i|PCin[16]~input          ; |pc_rv32i|PCin[16]~input          ; o                ;
+; |pc_rv32i|PCin[16]                ; |pc_rv32i|PCin[16]                ; padout           ;
+; |pc_rv32i|PCin[17]~input          ; |pc_rv32i|PCin[17]~input          ; o                ;
+; |pc_rv32i|PCin[17]                ; |pc_rv32i|PCin[17]                ; padout           ;
+; |pc_rv32i|PCin[18]~input          ; |pc_rv32i|PCin[18]~input          ; o                ;
+; |pc_rv32i|PCin[18]                ; |pc_rv32i|PCin[18]                ; padout           ;
+; |pc_rv32i|PCin[19]~input          ; |pc_rv32i|PCin[19]~input          ; o                ;
+; |pc_rv32i|PCin[19]                ; |pc_rv32i|PCin[19]                ; padout           ;
+; |pc_rv32i|PCin[20]~input          ; |pc_rv32i|PCin[20]~input          ; o                ;
+; |pc_rv32i|PCin[20]                ; |pc_rv32i|PCin[20]                ; padout           ;
+; |pc_rv32i|PCin[21]~input          ; |pc_rv32i|PCin[21]~input          ; o                ;
+; |pc_rv32i|PCin[21]                ; |pc_rv32i|PCin[21]                ; padout           ;
+; |pc_rv32i|PCin[22]~input          ; |pc_rv32i|PCin[22]~input          ; o                ;
+; |pc_rv32i|PCin[22]                ; |pc_rv32i|PCin[22]                ; padout           ;
+; |pc_rv32i|PCin[23]~input          ; |pc_rv32i|PCin[23]~input          ; o                ;
+; |pc_rv32i|PCin[23]                ; |pc_rv32i|PCin[23]                ; padout           ;
+; |pc_rv32i|PCin[24]~input          ; |pc_rv32i|PCin[24]~input          ; o                ;
+; |pc_rv32i|PCin[24]                ; |pc_rv32i|PCin[24]                ; padout           ;
+; |pc_rv32i|PCin[25]~input          ; |pc_rv32i|PCin[25]~input          ; o                ;
+; |pc_rv32i|PCin[25]                ; |pc_rv32i|PCin[25]                ; padout           ;
+; |pc_rv32i|PCin[26]~input          ; |pc_rv32i|PCin[26]~input          ; o                ;
+; |pc_rv32i|PCin[26]                ; |pc_rv32i|PCin[26]                ; padout           ;
+; |pc_rv32i|PCin[27]~input          ; |pc_rv32i|PCin[27]~input          ; o                ;
+; |pc_rv32i|PCin[27]                ; |pc_rv32i|PCin[27]                ; padout           ;
+; |pc_rv32i|PCin[28]~input          ; |pc_rv32i|PCin[28]~input          ; o                ;
+; |pc_rv32i|PCin[28]                ; |pc_rv32i|PCin[28]                ; padout           ;
+; |pc_rv32i|PCin[29]~input          ; |pc_rv32i|PCin[29]~input          ; o                ;
+; |pc_rv32i|PCin[29]                ; |pc_rv32i|PCin[29]                ; padout           ;
+; |pc_rv32i|PCin[30]~input          ; |pc_rv32i|PCin[30]~input          ; o                ;
+; |pc_rv32i|PCin[30]                ; |pc_rv32i|PCin[30]                ; padout           ;
+; |pc_rv32i|PCin[31]~input          ; |pc_rv32i|PCin[31]~input          ; o                ;
+; |pc_rv32i|PCin[31]                ; |pc_rv32i|PCin[31]                ; padout           ;
+; |pc_rv32i|reset~input             ; |pc_rv32i|reset~input             ; o                ;
+; |pc_rv32i|reset                   ; |pc_rv32i|reset                   ; padout           ;
+; |pc_rv32i|clk~inputclkctrl        ; |pc_rv32i|clk~inputclkctrl        ; outclk           ;
+; |pc_rv32i|reset~inputclkctrl      ; |pc_rv32i|reset~inputclkctrl      ; outclk           ;
++-----------------------------------+-----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Nov 18 23:59:25 2025
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off 3_ProgramCounter -c pc_rv32i
+Info: Using vector source file "../3_ProgramCounter/pc_rv32i.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is     100.00 %
+Info: Number of transitions in simulation is 11326
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 161 megabytes
+    Info: Processing ended: Tue Nov 18 23:59:26 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -5,7 +5,7 @@
 // Kelompok     :  
 // Rombongan    :  
 // Nama (NIM) 1 : Muammar Qadafi (13223094) 
-// Nama (NIM) 2 : Muhammad Falih Rosyidi (13223094) 
+// Nama (NIM) 2 : Muhammad Falih Rosyidi (13223095) 
 // Nama File    : instr_rom_rv32i.v 
 // Deskripsi    : Instruction ROM 32x32 Single-Cycle RISC-V (RV32I) 
 module instr_rom_rv32i ( 
