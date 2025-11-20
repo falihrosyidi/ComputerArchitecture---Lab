@@ -21,7 +21,7 @@ module ctrl_unit_rv32i (
                                     // J-type = 3'b100 
     output reg [1:0] cu_ALUtype,    // ADD/SUB = 2'b00, GATE = 2'b01, 
                                     // SHIFT = 2'b10  , SLT = 2'b11 
-    output reg       cu_adtype,     // ADD = 1â€™b0, SUB = 1â€™b1 
+    output reg       cu_adtype,     // ADD = 1’b0, SUB = 1’b1 
     output reg [1:0] cu_gatype,     // AND = 2'b00, OR = 2'b01, XOR = 2'b10 
     output reg [1:0] cu_shiftype,   // SLL = 2'b00, SRL = 2'b01, SRA = 2'b11 
     output reg       cu_sltype,     // Signed = 1'b0, Unsigned = 1'b1 
@@ -171,7 +171,7 @@ module ctrl_unit_rv32i (
                 cu_ALU2src   = 1'b1;
                 cu_immtype   = 3'b010;
                 cu_branch    = 1'b1;
-                cu_PCtype    = 1'b1;
+                cu_PCtype    = 1'b0;
                 case (funct3) // default BEQ
                     3'h1: // BNE
                         cu_branchtype = 3'b101;
@@ -209,9 +209,9 @@ module ctrl_unit_rv32i (
                 cu_rdtype   = 2'b10;
                 cu_rdwrite  = 1'b1; 
                 cu_branch   = 1'b1;
-                cu_PCtype   = 1'b1;
+                cu_PCtype   = 1'b0;
             end 
-    
+            
             7'h67: // JALR 
             begin 
                 cu_ALU2src  = 1'b1;

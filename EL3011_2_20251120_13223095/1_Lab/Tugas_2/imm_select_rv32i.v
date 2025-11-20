@@ -25,7 +25,7 @@ module imm_select_rv32i(
             3'b010: // B-type 
                 imm <= {{20{trimmed_instr[24]}}, trimmed_instr[0], trimmed_instr[23:18], trimmed_instr[4:1], 1'b0};
             3'b011: // U-type 
-                imm <= {trimmed_instr[24:5], 12'b0};
+                imm <= {trimmed_instr[24:5], 12'h000};
             3'b100: // J-type 
                 imm <= {{12{trimmed_instr[24]}}, trimmed_instr[12:5], trimmed_instr[13], trimmed_instr[23:14], 1'b0};
             default: 
