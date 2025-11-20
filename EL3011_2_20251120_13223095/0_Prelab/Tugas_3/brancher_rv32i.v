@@ -3,6 +3,7 @@
 // Percobaan    : 3
 // Tanggal      : 20 Novemember 2025
 // Nama (NIM) 1 : Muhammad Nabil Raihan (13223014)
+// Nama (NIM) 2 : Muhammad Falih Rosyidi (13223095)
 // Nama File    : brancher_rv32i.v 
 // Deskripsi    : Brancher 32-bit RISC-V (RV32I)
 
@@ -15,10 +16,10 @@ module brancher_rv32i(
     input wire        [2:0]  cu_branchtype, // BEQ  = 3'b000, BGE = 3'b001, 
                                             // BGEU = 3'b010, BLT = 3'b011, 
                                             // BLTU = 3'b100, BNE = 3'b101 
- 
+
     output reg [31:0] PCin 
 ); 
- 
+
     always @ (*) begin 
         if (cu_branch) begin 
             case (cu_branchtype) 

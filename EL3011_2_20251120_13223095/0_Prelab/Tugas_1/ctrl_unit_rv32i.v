@@ -3,6 +3,7 @@
 // Percobaan    : 1
 // Tanggal      : 20 Novemember 2025
 // Nama (NIM) 1 : Muhammad Nabil Raihan (13223014)
+// Nama (NIM) 2 : Muhammad Falih Rosyidi (13223095)
 // Nama File    : ctrl_unit_rv32i.v 
 // Deskripsi    : Control Unit 32-bit RISC-V (RV32I)
 
@@ -12,7 +13,7 @@ module ctrl_unit_rv32i (
                                     // JALR = 7'h67, LUI = 7'h37, AUIPC = 7'h17 
     input wire [2:0] funct3, 
     input wire [6:0] funct7, 
- 
+
     output reg       cu_ALU1src,    // rs1 = 1'b0, PC = 1'b1 
     output reg       cu_ALU2src,    // rs2 = 1'b0, imm = 1'b1 
     output reg [2:0] cu_immtype,    // I-type = 3'b000, S-type = 3'b001, 
@@ -41,7 +42,7 @@ module ctrl_unit_rv32i (
     output reg       cu_PCtype      // PC += 4 = 1'b0, PC = ALU = 1'b1 
 ); 
     always @ (*)
-     begin 
+        begin 
         cu_ALU1src    = 1'b0;   // From rs1 by default 
         cu_ALU2src    = 1'b0;   // From rs2 by default 
         cu_immtype    = 3'b000; // I-type immediate by default 
@@ -58,7 +59,7 @@ module ctrl_unit_rv32i (
         cu_branch     = 1'b0;   // No by default 
         cu_branchtype = 3'b000; // BEQ by default 
         cu_PCtype     = 1'b0;   // PC += 4 by default 
- 
+
         case (opcode) 
             7'h33: // R-type 
             begin 
@@ -100,7 +101,7 @@ module ctrl_unit_rv32i (
                         cu_ALUtype = 2'b01; // Gate operation 
                 endcase 
             end 
-             
+            
             7'h13: // I-type, addi by default 
             begin 
                 cu_ALU2src = 1'b1; 
@@ -129,7 +130,7 @@ module ctrl_unit_rv32i (
                         cu_ALUtype = 2'b01;
                 endcase 
             end 
-             
+            
             7'h3: // Load 
             begin 
                 cu_ALU2src  = 1'b1;
@@ -146,7 +147,7 @@ module ctrl_unit_rv32i (
                         cu_loadtype = 3'b100;
                 endcase
             end 
-             
+            
             7'h23: // S-type 
             begin 
                 cu_ALU2src  = 1'b1;
@@ -159,7 +160,7 @@ module ctrl_unit_rv32i (
                         cu_storetype = 2'b10;
                 endcase
             end 
-             
+            
             7'h63: // B-type 
             begin 
                 cu_ALU1src   = 1'b1;
@@ -180,7 +181,7 @@ module ctrl_unit_rv32i (
                         cu_branchtype = 3'b010;
                 endcase
             end 
-             
+            
             7'h37: // LUI 
             begin 
                 cu_ALU2src  = 1'b1;
@@ -188,7 +189,7 @@ module ctrl_unit_rv32i (
                 cu_rdtype   = 2'b11;
                 cu_rdwrite  = 1'b1;
             end 
-             
+            
             7'h17: // AUIPC 
             begin 
                 cu_ALU1src  = 1'b1;
@@ -206,7 +207,7 @@ module ctrl_unit_rv32i (
                 cu_branch   = 1'b1;
                 cu_PCtype   = 1'b1;
             end 
-             
+            
             7'h67: // JALR 
             begin 
                 cu_ALU2src  = 1'b1;
@@ -217,5 +218,4 @@ module ctrl_unit_rv32i (
             end 
         endcase 
     end 
- 
 endmodule
